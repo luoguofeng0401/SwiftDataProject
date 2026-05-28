@@ -51,7 +51,7 @@ struct ContentView: View {
                 Button(showingUpcomingOnly ? "Show Everyone" : "Show Upcoming") {
                     showingUpcomingOnly.toggle()
                 }
-                Menu("Sort", systemImage: "arrow,up,arrow.down") {
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
                     Picker("Sort", selection: $sortOrder) {
                         Text("Sort by Name")
                             .tag([
